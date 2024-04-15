@@ -1,0 +1,38 @@
+{
+  "name": "socialsdk",
+  "version": "1.0.0",
+  "description": "A SDK for Social -- The Internet's API",
+  "main": "api.js",
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "axios": "^1.6.8",
+    "combined-stream": "^1.0.8",
+    "delayed-stream": "^1.0.0",
+    "follow-redirects": "^1.15.6",
+    "form-data": "^4.0.0",
+    "js-tokens": "^4.0.0",
+    "jwt-decode": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "proxy-from-env": "^1.1.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-UX-Company/SocialSDK.git"
+  },
+  "keywords": [
+    "Social"
+  ],
+  "author": "The UX Company",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-UX-Company/SocialSDK/issues"
+  },
+  "homepage": "https://github.com/The-UX-Company/SocialSDK#readme"
+}
