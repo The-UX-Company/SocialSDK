@@ -1,6 +1,6 @@
 {
   "name": "socialsdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A SDK for Social -- The Internet's API",
   "main": "api.js",
   "dependencies": {
