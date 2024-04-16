@@ -1,3 +1,5 @@
+
+
 # SocialSDK Documentation
 
 SocialSDK enables the rapid development of social platforms by providing a comprehensive set of components and an API for handling common tasks such as user authentication, profile management, posts creation, and file uploads.
@@ -30,6 +32,86 @@ npm install axios jwt-decode
 ```
 
 If you're using environment variables (recommended for sensitive information like API keys), ensure they're properly configured in your environment or `.env` file.
+
+## 1. Setting Up Your Development Environment
+
+### 1.1 Install Node.js and npm
+If you haven't already, download and install Node.js from [nodejs.org](https://nodejs.org/). npm (Node Package Manager) comes bundled with Node.js.
+
+### 1.2 Create a New Project Directory
+Open your terminal or command prompt, navigate to your desired location, and create a new directory for your project:
+```bash
+mkdir my-social-app
+cd my-social-app
+```
+
+### 1.3 Initialize Your Project
+Initialize a new Node.js project by running:
+```bash
+npm init -y
+```
+
+## 2. Installing the SocialSDK Package
+
+### 2.1 Install SocialSDK Package
+Install the SocialSDK package using npm:
+```bash
+npm install socialsdk
+```
+
+## 3. Obtaining and Setting Up Your API Key
+
+### 3.1 Sign Up for an Account
+If you haven't already, sign up for an account on the Social platform.
+
+### 3.2 Obtain Your API Key
+After signing up, navigate to your account settings or developer dashboard to obtain your API key.
+
+### 3.3 Store Your API Key
+For security reasons, it's best practice to store your API key in environment variables. Create a new file named `.env` in the root of your project directory and add your API key:
+```
+REACT_APP_API_KEY=your_api_key_here
+```
+
+## 4. Writing Your First Code
+
+### 4.1 Create a JavaScript File
+Create a new JavaScript file in your project directory. Let's name it `app.js`.
+
+### 4.2 Import SocialSDK Components
+In your `app.js` file, import the necessary components from the SocialSDK package:
+```javascript
+import {
+  LogInBox,
+  ProfileComponent,
+  FollowComponent,
+  FeedComponent,
+  PostCreationForm,
+  UploadComponent,
+  RegistrationComponent
+} from 'socialsdk';
+```
+
+### 4.3 Initialize Your API Base URL
+Define your API base URL and API key:
+```javascript
+const API_BASE_URL = 'http://[DOMAIN]/api';
+const API_KEY = process.env.REACT_APP_API_KEY;
+```
+
+### 4.4 Making API Requests
+Implement API requests using the provided functions:
+```javascript
+// Example API call to login
+export const login = (email, password, platform_id) => makeRequest('/members/login', 'post', {email, password, platform_id});
+// Other API request functions...
+```
+
+### 4.5 Run Your Code
+To test your setup, run your JavaScript file using Node.js:
+```bash
+node app.js
+```
 
 ## Components
 
